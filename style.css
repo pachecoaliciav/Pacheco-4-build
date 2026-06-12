@@ -1,0 +1,188 @@
+:root {
+    --espresso: #4b3621;
+    --mocha: #6f4e37;
+    --cream: #f5f1e8;
+    --sage: #8a9a5b;
+    --sand: #d8c3a5;
+    --charcoal: #2e2e2e;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: var(--cream);
+    color: var(--charcoal);
+}
+
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+    background-color: var(--espresso);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header p {
+    margin-top: 0.75rem;
+}
+
+
+nav {
+    grid-area: nav;
+    background-color: var(--mocha);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.nav-links a:hover {
+    background-color: var(--sage);
+}
+
+
+main {
+    grid-area: main;
+    padding: 1.5rem;
+}
+
+.intro,
+.resources {
+    margin-bottom: 2rem;
+}
+
+.intro h2,
+.resources h2 {
+    color: var(--espresso);
+    margin-bottom: 1rem;
+}
+
+.intro p,
+.resources p {
+    margin-bottom: 1rem;
+}
+
+
+.card-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card h2,
+.card h3 {
+    color: var(--espresso);
+    padding: 1rem 1rem 0;
+}
+
+.card p,
+.card ul,
+.card ol {
+    padding: 0 1rem 1rem;
+}
+
+.card ul,
+.card ol {
+    padding-left: 2.5rem;
+}
+
+
+.resources ul {
+    padding-left: 1.5rem;
+}
+
+.resources li {
+    margin-bottom: 0.75rem;
+}
+
+.resources a {
+    color: var(--mocha);
+    font-weight: bold;
+}
+
+.resources a:hover {
+    color: var(--sage);
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: var(--espresso);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+
+@media (min-width: 768px) {
+
+    .nav-links {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 1 1 300px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .card-row {
+        gap: 2rem;
+    }
+
+    header {
+        padding: 3rem;
+    }
+}
