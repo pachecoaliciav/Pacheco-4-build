@@ -1,10 +1,10 @@
-:root {
-    --espresso: #4b3621;
-    --mocha: #6f4e37;
-    --cream: #f5f1e8;
-    --sage: #8a9a5b;
-    --sand: #d8c3a5;
-    --charcoal: #2e2e2e;
+body {
+    espresso: #4b3621;
+    mocha: #6f4e37;
+    cream: #f5f1e8;
+    sage: #8a9a5b;
+    sand: #d8c3a5;
+    charcoal: #2e2e2e;
 }
 
 * {
@@ -19,7 +19,6 @@ body {
     background-color: var(--cream);
     color: var(--charcoal);
 }
-
 
 body {
     display: grid;
@@ -41,7 +40,6 @@ header {
 header p {
     margin-top: 0.75rem;
 }
-
 
 nav {
     grid-area: nav;
@@ -152,8 +150,7 @@ footer {
     padding: 1.5rem;
 }
 
-
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
     .nav-links {
         flex-direction: row;
