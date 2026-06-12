@@ -1,32 +1,26 @@
 body {
-    espresso: #4b3621
-    mocha: #6f4e37
-    cream: #f5f1e8
-    sage: #8a9a5b
-    sand: #d8c3a5
-    charcoal: #2e2e2e
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
+    --espresso: #4b3621;
+    --mocha: #6f4e37;
+    --cream: #f5f1e8;
+    --sage: #8a9a5b;
+    --sand: #d8c3a5;
+    --charcoal: #2e2e2e;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     background-color: #f5f1e8;
     color: #2e2e2e;
-}
-
-body {
     display: grid;
     grid-template-areas:
         "header"
         "nav"
         "main"
         "footer";
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -64,7 +58,6 @@ nav {
     background-color: #8a9a5b;
 }
 
-
 main {
     grid-area: main;
     padding: 1.5rem;
@@ -85,7 +78,6 @@ main {
 .resources p {
     margin-bottom: 1rem;
 }
-
 
 .card-row {
     display: flex;
@@ -123,7 +115,6 @@ main {
     padding-left: 2.5rem;
 }
 
-
 .resources ul {
     padding-left: 1.5rem;
 }
@@ -140,7 +131,6 @@ main {
 .resources a:hover {
     color: #8a9a5b;
 }
-
 
 footer {
     grid-area: footer;
@@ -166,7 +156,6 @@ footer {
         flex: 1 1 300px;
     }
 }
-
 
 @media (min-width: 1024px) {
 
